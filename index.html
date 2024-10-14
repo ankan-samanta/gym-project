@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="45671.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first gym project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('wallpaperflare.com_wallpaper (4).jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+             font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;;
+        }
+
+        .left {
+            
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 54px;
+        }
+
+        .left img {
+            width: 170px;
+            cursor: pointer;
+            ;
+        }
+
+        .left div {
+            text-align: center;
+            height: 0px;
+    font-size: 22px;
+    
+        }
+
+        .mid {
+           
+            display: block;
+            width: 700px;
+            margin: 20px auto;
+            /* background-color: #00ff3e; */
+        }
+
+        .right {
+          
+            display: inline-block;
+            position: absolute;
+            top: 34px;
+            right: 25px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 13px 10px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: rgb(160, 49, 188);
+            background-color: rgb(243, 243, 113);
+
+
+        }
+        .btn{
+            margin: 1px 4px;
+            color: black;
+            background-color: rgb(229, 140, 32);
+            padding: 3px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+        }
+        .btn:hover{
+            background-color: aqua;
+        }
+        .container{
+            border: 2px solid maroon;
+    margin: 214px 40px;
+    padding: 12px 42px;
+    border-radius: 38px;
+    width: 600px;
+    font-size: 20px;
+    height: 580px;
+}
+.container:hover{
+    color: brown;
+}
+
+.but1{
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+.new{
+    margin: 47px auto;
+    display: block;
+    padding: 20px 31px;
+   
+    text-align: justify;
+
+}
+#par1{
+    display: block;
+    margin: 0px;
+}
+#submit{
+    margin: 0px 0px;
+    display: block;
+    width: 176px;
+}
+#submit:hover{
+background-color: greenyellow;
+}
+h1:hover{
+   color: rgb(170, 138, 192);
+}
+a{
+    background-color: aquamarine;
+    border: 2px solid rgba(46, 41, 41, 0.222);
+    border-radius: 20px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="45671.jpg" alt="refresh">
+            <div id="fitness">Ankan fitness</div>
+        </div>
+        <!--mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">home</a></li>
+                <li> <a href="#">about us</a></li>
+                <li> <a href="#">fitness calculator</a></li>
+                <li> <a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">call us now</button>
+            <button class="btn">email us</button>
+        </div>
+    </header>
+   
+    <div class="container">
+        <h1 class="h1"> enroll best gym in kolkata</h1>
+       
+        <form action="ankan.php">
+            <div class="new">
+                <label for="name"></label>
+               Name <input type="text" id="name" placeholder="ENTER YOUR NAME" required>
+           
+               <br>
+               
+               <label for="email" id="email"></label>
+               Email <input type="email" id="email" placeholder="ENTER YOUR EMAIL" required>
+               <br>
+               <label for="mob.number"></label>
+               Phone <input type="number" id="number" placeholder="XXXXXXXXXX" required>
+               <br>
+               <label for="address"></label>
+               Address <input type="text" id="address" placeholder="ENTER YOUR ADDRESS" required>
+               <br>
+               gender<select name="gender" id="gender">
+                <option value="select Gender" id="gender">select gender</option>
+               <option value="Male" id="gender">male</option>
+               <option value="female" id="gender">female</option>
+               <option value="other" id="gender">other</option>
+            </select>
+            <br>
+            <label for="DOB"></label>
+            Date of Birth <input type="date" id="DOB">
+            <br>
+            <label for="education"></label>
+            Highest Education <input type="text" id="education" placeholder="HIGHER EDUCATION" required>
+            <br>
+            <label for="collage"></label>
+             <input type="text" id="collage" placeholder="ENTER COLLAGES" required>
+            <p id="par1">write your Review</p>
+            <textarea name="explane" id="explane" cols="22" rows="5" placeholder="enter your experience" required></textarea>
+            <br>
+            <div>
+            <label for="submit"></label>
+            <input type="button" id="submit" value="Submit" required></div>
+        </div>
+        </div>
+    </form>
+    </body>
+    </html>
+      
+
+    
